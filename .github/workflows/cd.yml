@@ -3,7 +3,7 @@ name: Continuos Deployment workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   cd:
@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        run: npm run deploy -- -r git@github.com:<owner>/<repository-name>.git
+        run: npm run deploy -- -r git@github.com:marpri-17/lemoncode_cloud_workflows.git
